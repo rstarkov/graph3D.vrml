@@ -21,7 +21,7 @@ namespace Graph3D.Vrml.Fields {
             _values = new List<T>(items);
         }
 
-        private readonly List<T> _values = new List<T>();
+        public readonly List<T> _values = new List<T>();
         public virtual IEnumerable<T> Values {
             get { return _values; }
         }

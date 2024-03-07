@@ -35,6 +35,8 @@ namespace Graph3D.Vrml.Nodes {
             _eventOuts[eventOutName] = field;
         }
 
+        public IDictionary<string, Field> AllFields => _exposedFields.AsReadOnly();
+
         public Field GetExposedField(string exposedFieldName) {
             if (_exposedFields.TryGetValue(exposedFieldName, out Field field)) {
                 return field;
